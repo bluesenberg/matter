@@ -154,20 +154,6 @@ function onTestButtonClick() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function(event) {
   $("#object-details").hide();
 
