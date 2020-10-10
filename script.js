@@ -122,27 +122,6 @@ function getAndRenderInformation() {
             console.log(error);
         }
     });
-
-    // $.ajax({
-    //     url: SERVER_URL + CLAIM_INFO,
-    //     type: "POST",
-    //     headers: {
-    //         "Content-Type":"application/json"
-    //     },
-    //     data: JSON.stringify(visitorData),
-    //     success: function(result) {
-    //         console.log("Claim Info");
-    //         console.log(result);
-    //         for (var i=0; i<result.length; i++) {
-    //             createDiv(result, i, result[i], "claims-content-div");
-    //         }
-
-    //     },
-    //     error: function(error) {
-    //         console.log("ERROR");
-    //         console.log(error);
-    //     }
-    // });  
 }
 
 function onTestButtonClick() {
@@ -156,14 +135,6 @@ function onTestButtonClick() {
 
 document.addEventListener("DOMContentLoaded", function(event) {
   $("#object-details").hide();
-
-  // RUN FUNCTION
-  $("#object-details").show();
-  makeClickable("details-title");
-  $(".field-container").hide();
-  var counter = 0;
-  getAndRenderInformation();
-
 
   // RUN FUNCTION
   $("#object-details").show();
